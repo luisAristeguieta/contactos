@@ -5,8 +5,15 @@ public class Contacto {
 	private String apellido;
 	private int edad;
 	private String celular;
+	public double peso;
 	
 	
+	public double getpeso() {
+		return peso;
+	}
+	public void setpeso(double peso) {
+		this.peso = peso;
+	}
 	public String getNombre() {
 		return nombre;
 	}
