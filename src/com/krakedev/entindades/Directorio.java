@@ -25,4 +25,8 @@ public class Directorio {
 		contactos.add(contacto);
 	}
 	
+	public int obtenerCantidadContactos() {
+		return contactos.size();
+	}
+	
 }

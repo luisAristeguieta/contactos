@@ -13,6 +13,8 @@ public class TestAgregar {
 		Directorio directorio = new Directorio();
 		
 		directorio.agregarContacto(contacto);
+		
+		System.out.println(directorio.getContactos().size());
 
 	}
 
