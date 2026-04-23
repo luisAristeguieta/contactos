@@ -29,4 +29,8 @@ public class Directorio {
 		return contactos.size();
 	}
 	
+	public Contacto obtenerContacto(int indice) {
+		return contactos.get(indice);
+	}
+	
 }
