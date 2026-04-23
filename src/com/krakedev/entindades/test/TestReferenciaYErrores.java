@@ -21,7 +21,7 @@ public class TestReferenciaYErrores {
 				directorio.agregarContacto(contacto1);
 				directorio.agregarContacto(contacto2);
 				
-				// Se invocaria la funcion que retorna el contacto y se accede al nombre del contacto recuperado:
+				// Se invocaria la funcion que retorna el contacto y se accede al nombre del contacto recuperado que no existe el indice:
 				
 				System.out.println("El nombre del contacto es: " + directorio.obtenerContacto(4).getNombre());
 

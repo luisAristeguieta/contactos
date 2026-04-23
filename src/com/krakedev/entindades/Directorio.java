@@ -33,4 +33,11 @@ public class Directorio {
 		return contactos.get(indice);
 	}
 	
+	public void imprimirContacto() {
+		for(int i = 0; i<contactos.size();i++) {
+			Contacto contactoRecuperado = contactos.get(i);
+			System.out.println("El nombre del contacto es: " +  contactoRecuperado.getNombre());
+		}
+	}
+	
 }
