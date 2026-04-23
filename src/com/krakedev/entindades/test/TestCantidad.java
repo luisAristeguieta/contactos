@@ -7,6 +7,9 @@ public class TestCantidad {
 
 	public static void main(String[] args) {
 		
+		// Se crea este test para probar el método obtenerCantidadContactos() y determinar el tamanño de la lista.
+		// Para probarlo ya debe existir un directorio con un conjunto de contactos agregados
+		
 		// Crea diferentes contactos en este caso con nombres y se agregan a lista de directorio: 
 		Contacto contacto0 = new Contacto();
 		contacto0.setNombre("Luis");

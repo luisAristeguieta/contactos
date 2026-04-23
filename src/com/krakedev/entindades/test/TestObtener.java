@@ -6,6 +6,8 @@ import com.krakedev.entindades.Directorio;
 public class TestObtener {
 
 	public static void main(String[] args) {
+		// Con este test se quiere probar el metodo obtenerContacto, teniendo un directorio con contacto se procede a acceder a el nombre de un contacto.
+		
 		// Crea diferentes contactos en este caso con nombres y se agregan a lista de directorio: 
 		Contacto contacto0 = new Contacto();
 		contacto0.setNombre("Luis");
