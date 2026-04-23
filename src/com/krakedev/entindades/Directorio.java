@@ -40,4 +40,8 @@ public class Directorio {
 		}
 	}
 	
+	public String  recuperarNumero(int posicion) {
+		return obtenerContacto(posicion).getCelular();
+	}
+	
 }
