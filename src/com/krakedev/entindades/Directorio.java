@@ -44,4 +44,14 @@ public class Directorio {
 		return obtenerContacto(posicion).getCelular();
 	}
 	
+	
+	public Contacto buscarContactoConCelular(String numero) {
+		for (int i = 0; i<contactos.size();i++) {
+			Contacto contactoRecuperado = contactos.get(i);
+			if(contactoRecuperado.getCelular().equals(numero))
+				return contactoRecuperado;
+		}
+		return null;
+	}
+	
 }
