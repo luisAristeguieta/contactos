@@ -65,4 +65,12 @@ public class Directorio {
 		return null;
 	}
 	
+	public boolean eliminarContacto (String numero) {
+		// Recibiendo el numero de celular del contacto, verifica que exista y de existir se procede a eliminar: 
+		Contacto contactoConsultado =  buscarContactoConCelular(numero);
+
+		return (contactoConsultado != null) ? contactos.remove(contactoConsultado) : false; // Aplicacion del operador ternario
+	}
+	
+	
 }
