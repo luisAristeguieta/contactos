@@ -72,5 +72,18 @@ public class Directorio {
 		return (contactoConsultado != null) ? contactos.remove(contactoConsultado) : false; // Aplicacion del operador ternario
 	}
 	
+	public ArrayList<Contacto> buscarContactoCoincidencias (String subcadena){
+		// Mostrar una lista de contactos que contenga en su nombre lo que se envia como subcadena en la lista ya existente.
+		ArrayList<Contacto> contactosCoincidencias = new  ArrayList<Contacto>();
+		
+		for (int i = 0; i<contactos.size();i++) {
+			Contacto contactoRecuperado = contactos.get(i);
+			if (contactoRecuperado.getNombre().startsWith(subcadena)) {
+				contactosCoincidencias.add(contactoRecuperado);
+			}
+		}
+		return contactosCoincidencias;
+	}
+	
 	
 }
