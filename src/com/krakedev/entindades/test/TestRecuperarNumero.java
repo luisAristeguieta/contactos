@@ -6,16 +6,17 @@ import com.krakedev.entindades.Directorio;
 public class TestRecuperarNumero {
 
 	public static void main(String[] args) {
-		// Tiene como objetivo probar el metodo recuperarNumero(), ya se debe tener un directorio con contacto y sus numeros
+		// Tiene como objetivo probar el metodo recuperarNumero(), recuperando el numero del contacto de la posicion deseada
+		// 
 		Contacto contacto0 = new Contacto();
 		contacto0.setNombre("Luis");
 		contacto0.setCelular("0958917822");
 		Contacto contacto1 = new Contacto();
 		contacto1.setNombre("Maria");
-		contacto0.setCelular("0958917511");
+		contacto1.setCelular("0958917511");
 		Contacto contacto2 = new Contacto();
 		contacto2.setNombre("Junior");
-		contacto0.setCelular("0998910912");
+		contacto2.setCelular("0998910912");
 		
 		Directorio directorio = new Directorio();
 		directorio.agregarContacto(contacto0);

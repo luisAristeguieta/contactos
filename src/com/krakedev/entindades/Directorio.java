@@ -20,9 +20,20 @@ public class Directorio {
 		this.contactos = contactos;
 	}
 	
-	public void agregarContacto (Contacto contacto) {
+	public boolean agregarContacto (Contacto contacto) {
 		
+		// Metodo se modifica despues de crear el metodo buscarContactoConCelular, de tal manera que si al buscar en la lista
+		// tiene un valor null significa que no existe el numero registrado que se esta agregando.
+		Contacto contactoExistente =  buscarContactoConCelular(contacto.getCelular());
+		
+		/*if (contactoExistente == null) {
 		contactos.add(contacto);
+		return true;
+		} else {
+		return false;
+		}*/
+		
+		return (contactoExistente == null) ? contactos.add(contacto) : false; // Aplicacion del operador ternario
 	}
 	
 	public int obtenerCantidadContactos() {
